@@ -24,6 +24,7 @@ class QuestionsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateUi()
 
     }
 
@@ -37,5 +38,13 @@ class QuestionsViewController: UIViewController {
     @IBAction func rangeAnswerButtonPressed() {
     }
 
+}
+
+extension QuestionsViewController {
+    private func updateUi() {
+        for stackView in [singleStackView, multipleStackView, rangedStackView] {
+            stackView?.isHidden = true
+        }
+    }
 }
 
