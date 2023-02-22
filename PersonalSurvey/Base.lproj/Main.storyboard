@@ -29,6 +29,9 @@
                                         <rect key="frame" x="54.000000000000014" y="47.333333333333371" width="133.33333333333337" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Начать опрос"/>
+                                        <connections>
+                                            <segue destination="zjt-eQ-AU8" kind="presentation" id="5TF-KZ-tTj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -63,7 +66,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E3w-aF-kYv" secondAttribute="bottom" constant="20" id="BTk-p5-cDz"/>
                             <constraint firstItem="iIB-fQ-eEI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DT4-mo-wZJ"/>
                             <constraint firstItem="1e0-KF-mhk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Djj-bw-9ax"/>
-                            <constraint firstItem="E3w-aF-kYv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9kt-Mu-0fs" secondAttribute="trailing" constant="284" id="Mqx-7t-Hsd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9kt-Mu-0fs" secondAttribute="bottom" constant="20" id="STN-93-vNu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E3w-aF-kYv" secondAttribute="trailing" constant="20" id="bmP-Tg-LP6"/>
                             <constraint firstItem="iIB-fQ-eEI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e6i-Lq-Q3z"/>
@@ -71,13 +73,90 @@
                             <constraint firstItem="1e0-KF-mhk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="nEG-sA-cXr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="olT-NF-7oG" secondAttribute="trailing" constant="20" id="qpd-mu-kqo"/>
                             <constraint firstItem="9kt-Mu-0fs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wZZ-e0-HIR"/>
-                            <constraint firstItem="olT-NF-7oG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1e0-KF-mhk" secondAttribute="trailing" constant="284" id="whi-4r-3Mc"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="4"/>
+        </scene>
+        <!--Вопро№ -->
+        <scene sceneID="po9-Le-g6q">
+            <objects>
+                <viewController id="ng3-sp-scj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FGC-RZ-pdi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3q6-v2-veV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Вопро№ " largeTitleDisplayMode="always" id="tYa-fh-j45"/>
+                    <connections>
+                        <segue destination="fdU-8b-jQL" kind="show" identifier="showresult" id="aua-hK-9eS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eP9-ne-0ow" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="758"/>
+        </scene>
+        <!--Результат-->
+        <scene sceneID="f7O-wB-O6A">
+            <objects>
+                <viewController id="fdU-8b-jQL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ium-GH-Gwx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Aep-5i-u2j">
+                                <rect key="frame" x="16" y="316.66666666666669" width="382" height="102.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - 🐖" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Pa-O5-yls">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы свинья" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfF-SR-eZk">
+                                        <rect key="frame" x="0.0" y="68" width="382" height="34.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UFh-V2-YOG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UFh-V2-YOG" firstAttribute="trailing" secondItem="Aep-5i-u2j" secondAttribute="trailing" constant="16" id="3c7-Ri-NKj"/>
+                            <constraint firstItem="Aep-5i-u2j" firstAttribute="leading" secondItem="UFh-V2-YOG" secondAttribute="leading" constant="16" id="vSg-Ug-x4n"/>
+                            <constraint firstItem="Aep-5i-u2j" firstAttribute="centerY" secondItem="Ium-GH-Gwx" secondAttribute="centerY" id="y0p-nd-pKN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Результат" id="gud-7r-nuI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8j-9m-zpU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871" y="757"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IJt-pF-Y6d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="zjt-eQ-AU8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="KSE-Hb-KkL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ng3-sp-scj" kind="relationship" relationship="rootViewController" id="RdG-gf-dWM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GW7-lt-B1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-613" y="758"/>
         </scene>
     </scenes>
     <resources>
