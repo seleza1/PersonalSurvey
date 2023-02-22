@@ -52,7 +52,6 @@ class QuestionsViewController: UIViewController {
     @IBAction func rangeAnswerButtonPressed() {
 
     }
-
 }
 
 extension QuestionsViewController {
@@ -78,7 +77,7 @@ extension QuestionsViewController {
         case .single: showSingleStackView(with: currentAnswers)
         case .multiple: break
         case .ranged: break
-            
+
         }
     }
 
