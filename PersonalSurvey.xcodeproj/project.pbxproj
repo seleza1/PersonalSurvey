@@ -13,6 +13,7 @@
 		CE3C64F829A5F3C8005A8034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3C64F629A5F3C8005A8034 /* Main.storyboard */; };
 		CE3C64FA29A5F3CB005A8034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3C64F929A5F3CB005A8034 /* Assets.xcassets */; };
 		CE3C64FD29A5F3CB005A8034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3C64FB29A5F3CB005A8034 /* LaunchScreen.storyboard */; };
+		CE3C650529A623A6005A8034 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3C650429A623A6005A8034 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CE3C64F929A5F3CB005A8034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE3C64FC29A5F3CB005A8034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE3C64FE29A5F3CB005A8034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3C650429A623A6005A8034 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				CE3C64F929A5F3CB005A8034 /* Assets.xcassets */,
 				CE3C64FB29A5F3CB005A8034 /* LaunchScreen.storyboard */,
 				CE3C64FE29A5F3CB005A8034 /* Info.plist */,
+				CE3C650429A623A6005A8034 /* Question.swift */,
 			);
 			path = PersonalSurvey;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3C64F529A5F3C8005A8034 /* ViewController.swift in Sources */,
+				CE3C650529A623A6005A8034 /* Question.swift in Sources */,
 				CE3C64F129A5F3C8005A8034 /* AppDelegate.swift in Sources */,
 				CE3C64F329A5F3C8005A8034 /* SceneDelegate.swift in Sources */,
 			);
