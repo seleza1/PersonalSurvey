@@ -23,11 +23,13 @@ class QuestionsViewController: UIViewController {
     @IBOutlet var rangedLabels: [UILabel]!
     @IBOutlet var rangedSlider: UISlider!
 
+    private var questionIndex = 0
+    private var answersChosen: [Answer] = []
+
     private let questions = Question.getQuestions()
     private var currentAnswers : [Answer] { // вычисляемое свойство не требует инициализации
         questions[questionIndex].answers
     }
-    private var questionIndex = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +38,10 @@ class QuestionsViewController: UIViewController {
     }
 
     @IBAction func singleButtonAnswerPressed(_ sender: UIButton) {
+        guard let buttonIndex = singleButtons.firstIndex(of: sender) else { return }
+        let answer = currentAnswers[buttonIndex]
+        answersChosen.append(answer)
+        nextQuestion()
     }
 
     @IBAction func multipleAnswerButtonPressed() {
@@ -83,6 +89,17 @@ extension QuestionsViewController {
         for (button, answer) in zip(singleButtons, answers) {
             button.setTitle(answer.title, for: .normal)
         }
+    }
+
+    private func nextQuestion() {
+        questionIndex += 1
+
+        if questionIndex < questions.count {
+            updateUi()
+            return
+        }
+
+        performSegue(withIdentifier: "showresult", sender: nil)
     }
 }
 
