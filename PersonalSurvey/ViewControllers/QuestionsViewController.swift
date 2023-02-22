@@ -45,10 +45,12 @@ class QuestionsViewController: UIViewController {
     }
 
     @IBAction func multipleAnswerButtonPressed() {
+
     }
 
 
     @IBAction func rangeAnswerButtonPressed() {
+
     }
 
 }
@@ -73,16 +75,12 @@ extension QuestionsViewController {
 
     private func showCurrentAnswers(for type: ResponseType) {
         switch type {
-
         case .single: showSingleStackView(with: currentAnswers)
-
         case .multiple: break
-
         case .ranged: break
-
+            
         }
     }
-
 
     private func showSingleStackView(with answers: [Answer]) {
         singleStackView.isHidden = false
