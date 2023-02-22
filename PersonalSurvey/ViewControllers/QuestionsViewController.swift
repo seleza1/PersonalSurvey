@@ -9,6 +9,9 @@ import UIKit
 
 class QuestionsViewController: UIViewController {
 
+    @IBOutlet var questionProgressView: UIProgressView!
+    @IBOutlet var questionLabel: UILabel!
+
     @IBOutlet var singleStackView: UIStackView!
     @IBOutlet var singleButtons: [UIButton]!
 
@@ -21,6 +24,7 @@ class QuestionsViewController: UIViewController {
     @IBOutlet var rangedSlider: UISlider!
 
     private let questions = Question.getQuestions()
+    private var questionIndex = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +48,37 @@ extension QuestionsViewController {
     private func updateUi() {
         for stackView in [singleStackView, multipleStackView, rangedStackView] {
             stackView?.isHidden = true
+        }
+
+        let currentQuestion = questions[questionIndex]
+        questionLabel.text = currentQuestion.title
+
+        let totalIndex = Float(questionIndex) / Float(questions.count)
+
+        questionProgressView.setProgress(totalIndex, animated: true)
+
+        title = "Вопрос № \(questionIndex + 1) из \(questions.count)"
+
+        showCurrentAnswers(for: currentQuestion.responseType)
+    }
+
+    private func showCurrentAnswers(for type: ResponseType) {
+        switch type {
+
+        case .single: break
+
+        case .multiple: break
+
+        case .ranged: break
+
+        }
+    }
+
+
+    private func showSingleStackView(with answers: [Answer]) {
+        singleStackView.isHidden = false
+        for (button, answer) in zip(singleButtons, answers) {
+            button.setTitle(answer.title, for: .normal)
         }
     }
 }

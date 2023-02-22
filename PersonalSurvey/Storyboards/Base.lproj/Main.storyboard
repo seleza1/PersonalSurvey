@@ -266,6 +266,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="multipleStackView" destination="ctZ-Lc-Bbd" id="Nfh-XN-hn6"/>
+                        <outlet property="questionLabel" destination="nls-YC-yps" id="rgs-Dx-zvZ"/>
+                        <outlet property="questionProgressView" destination="ZJO-9o-CXs" id="Oyr-lp-FR9"/>
                         <outlet property="rangedSlider" destination="Qop-Xj-Pzv" id="AKU-rh-lQb"/>
                         <outlet property="rangedStackView" destination="9Kc-dW-7tk" id="Knh-We-kmT"/>
                         <outlet property="singleStackView" destination="Ael-wy-q64" id="H77-CL-hAH"/>
