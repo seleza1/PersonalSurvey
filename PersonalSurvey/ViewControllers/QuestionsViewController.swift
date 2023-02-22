@@ -24,6 +24,9 @@ class QuestionsViewController: UIViewController {
     @IBOutlet var rangedSlider: UISlider!
 
     private let questions = Question.getQuestions()
+    private var currentAnswers : [Answer] { // вычисляемое свойство не требует инициализации
+        questions[questionIndex].answers
+    }
     private var questionIndex = 0
 
     override func viewDidLoad() {
@@ -65,7 +68,7 @@ extension QuestionsViewController {
     private func showCurrentAnswers(for type: ResponseType) {
         switch type {
 
-        case .single: break
+        case .single: showSingleStackView(with: currentAnswers)
 
         case .multiple: break
 
