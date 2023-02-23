@@ -33,7 +33,7 @@ class ResultViewController: UIViewController {
 extension ResultViewController {
     private func updateResult() {
         var frequencyOfAnimals: [Animal: Int] = [:]
-        let animals = answer.map { $0.animal }
+        let animals = answer.map { $0.animal } // перебирает массив и возвращает сам массив
 
         for animal in animals {
             if let animalTypeCount = frequencyOfAnimals[animal] {
