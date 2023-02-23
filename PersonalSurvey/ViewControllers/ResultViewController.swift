@@ -9,9 +9,14 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet var animalTypeLabel: UILabel!
+    @IBOutlet var descriptionLabel: UILabel!
+
+    var answer: [Answer]!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.hidesBackButton = true
     }
 
     @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
