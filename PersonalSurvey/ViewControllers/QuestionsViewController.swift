@@ -21,7 +21,11 @@ class QuestionsViewController: UIViewController {
 
     @IBOutlet var rangedStackView: UIStackView!
     @IBOutlet var rangedLabels: [UILabel]!
-    @IBOutlet var rangedSlider: UISlider!
+    @IBOutlet var rangedSlider: UISlider! {
+        didSet {
+            let answerCount =  Float(currentAnswers.count - 1)
+        }
+    }
 
     private var questionIndex = 0
     private var answersChosen: [Answer] = []
@@ -81,7 +85,7 @@ extension QuestionsViewController {
         switch type {
         case .single: showSingleStackView(with: currentAnswers)
         case .multiple: showMultipleStackView(with: currentAnswers)
-        case .ranged: break
+        case .ranged: showRangedStackView(with: currentAnswers)
 
         }
     }
@@ -101,6 +105,14 @@ extension QuestionsViewController {
         for (label, answer) in zip(multipleLabels, answers) {
             label.text = answer.title
         }
+
+    }
+
+    private func showRangedStackView(with answers: [Answer]) {  // если в массиве всего 2 элемента, то мы можем обращаться к нему first, last
+        rangedStackView.isHidden.toggle()
+
+        rangedLabels.first?.text = answers.first?.title
+        rangedLabels.last?.text = answers.last?.title
 
     }
 
