@@ -279,7 +279,7 @@
                         <outletCollection property="multipleSwitches" destination="CGN-DS-zLF" collectionClass="NSMutableArray" id="fq2-NL-deA"/>
                         <outletCollection property="rangedLabels" destination="dDi-69-Oys" collectionClass="NSMutableArray" id="Hao-T2-rtZ"/>
                         <outletCollection property="rangedLabels" destination="fCI-Sn-V9z" collectionClass="NSMutableArray" id="T4K-tg-LTG"/>
-                        <segue destination="fdU-8b-jQL" kind="show" identifier="showresult" id="aua-hK-9eS"/>
+                        <segue destination="fdU-8b-jQL" kind="show" identifier="showResult" id="aua-hK-9eS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eP9-ne-0ow" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

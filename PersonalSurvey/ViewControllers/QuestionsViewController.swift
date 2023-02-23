@@ -82,10 +82,20 @@ extension QuestionsViewController {
     }
 
     private func showSingleStackView(with answers: [Answer]) {
-        singleStackView.isHidden = false
+        singleStackView.isHidden.toggle()
         for (button, answer) in zip(singleButtons, answers) {
             button.setTitle(answer.title, for: .normal)
         }
+
+    }
+
+    private func showMultipleStackView(with answers: [Answer]) {
+        multipleStackView.isHidden.toggle()
+
+        for (label, answer) in zip(multipleLabels, answers) {
+            label.text = answer.title
+        }
+
     }
 
     private func nextQuestion() {
@@ -95,8 +105,7 @@ extension QuestionsViewController {
             updateUi()
             return
         }
-
-        performSegue(withIdentifier: "showresult", sender: nil)
+        performSegue(withIdentifier: "showResult", sender: nil)
     }
 }
 
