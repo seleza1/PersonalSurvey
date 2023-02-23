@@ -24,10 +24,6 @@ class ResultViewController: UIViewController {
         //view.window?.rootViewController?.dismiss(animated: true) //вернёмся до главного viewController
         navigationController?.dismiss(animated: true)
     }
-
-//    deinit {
-//        print("Выгружен из памяти")
-//    }
 }
 
 extension ResultViewController {
