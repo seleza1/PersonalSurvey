@@ -63,6 +63,7 @@ class QuestionsViewController: UIViewController {
     @IBAction func rangedAnswerButtonPressed() {
         let index = lrintf(rangedSlider.value) // округляем float до целых
         answersChosen.append(currentAnswers[index])
+        nextQuestion()
     }
 }
 
