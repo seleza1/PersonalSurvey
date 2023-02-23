@@ -17,6 +17,7 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+        updateResult()
     }
 
     @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
@@ -27,4 +28,20 @@ class ResultViewController: UIViewController {
 //    deinit {
 //        print("Выгружен из памяти")
 //    }
+}
+
+extension ResultViewController {
+    private func updateResult() {
+        var frequencyOfAnimals: [Animal: Int] = [:]
+        let animals = answer.map { $0.animal }
+
+        for animal in animals {
+            if let animalTypeCount = frequencyOfAnimals[animal] {
+                frequencyOfAnimals.updateValue(animalTypeCount + 1, forKey: animal)
+            } else {
+                frequencyOfAnimals[animal] = 1
+            }
+        }
+
+    }
 }
