@@ -24,6 +24,7 @@ class QuestionsViewController: UIViewController {
     @IBOutlet var rangedSlider: UISlider! {
         didSet {
             let answerCount =  Float(currentAnswers.count - 1)
+            rangedSlider.maximumValue = answerCount
         }
     }
 
@@ -48,7 +49,7 @@ class QuestionsViewController: UIViewController {
         nextQuestion()
     }
 
-    @IBAction func multipleAnswerButtonPressed() {
+    @IBAction func multipleButtonAnswerPressed() {
         for (multipleSwitches, answer) in zip(multipleSwitches, currentAnswers) {
             if multipleSwitches.isOn {
                 answersChosen.append(answer)
@@ -58,7 +59,7 @@ class QuestionsViewController: UIViewController {
     }
 
 
-    @IBAction func rangeAnswerButtonPressed() {
+    @IBAction func rangedAnswerButtonPressed() {
 
     }
 }
