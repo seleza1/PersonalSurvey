@@ -25,6 +25,7 @@ class QuestionsViewController: UIViewController {
         didSet {
             let answerCount =  Float(currentAnswers.count - 1)
             rangedSlider.maximumValue = answerCount
+            rangedSlider.value = answerCount / 2
         }
     }
 
