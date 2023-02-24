@@ -39,5 +39,15 @@ extension ResultViewController {
             }
         }
 
+        let sortedFrequencyOfAnimals = frequencyOfAnimals.sorted{ $0.value > $1.value }
+        guard let mostFrequencyAnimal = sortedFrequencyOfAnimals.first?.key else { return }
+
+        updateUi(with: mostFrequencyAnimal)
+
+    }
+
+    private func updateUi(with animal: Animal) {
+        animalTypeLabel.text = "Вы - \(animal.rawValue)!"
+        descriptionLabel.text = animal.definition
     }
 }

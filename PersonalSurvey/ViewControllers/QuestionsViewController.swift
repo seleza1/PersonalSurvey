@@ -64,7 +64,6 @@ class QuestionsViewController: UIViewController {
         nextQuestion()
     }
 
-
     @IBAction func rangedAnswerButtonPressed() {
         let index = lrintf(rangedSlider.value) // округляем float до целых
         answersChosen.append(currentAnswers[index])
@@ -105,7 +104,6 @@ extension QuestionsViewController {
         for (button, answer) in zip(singleButtons, answers) {
             button.setTitle(answer.title, for: .normal)
         }
-
     }
 
     private func showMultipleStackView(with answers: [Answer]) {
@@ -114,7 +112,6 @@ extension QuestionsViewController {
         for (label, answer) in zip(multipleLabels, answers) {
             label.text = answer.title
         }
-
     }
 
     private func showRangedStackView(with answers: [Answer]) {  // если в массиве всего 2 элемента, то мы можем обращаться к нему first, last
@@ -122,7 +119,6 @@ extension QuestionsViewController {
 
         rangedLabels.first?.text = answers.first?.title
         rangedLabels.last?.text = answers.last?.title
-
     }
 
     private func nextQuestion() {
