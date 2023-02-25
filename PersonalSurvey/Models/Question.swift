@@ -17,9 +17,9 @@ struct Question {
                 responseType: .single,
                 answers: [
                     Answer(title: "Беру телефон в руки", animal: .blackHole),
-                    Answer(title: "Делаю зарядку", animal: .cat),
-                    Answer(title: "Делаю записи в дневник", animal: .rabbit),
-                    Answer(title: "Сажусь за учёбу", animal: .turtle)
+                    Answer(title: "Делаю зарядку", animal: .commonPerson),
+                    Answer(title: "Делаю записи в дневник", animal: .deliberate),
+                    Answer(title: "Сажусь за учёбу", animal: .reality)
                 ]
             ),
             Question(
@@ -27,9 +27,9 @@ struct Question {
                 responseType: .multiple,
                 answers: [
                     Answer(title: "Смотрю тик-ток, сижу в соц сетях", animal: .blackHole),
-                    Answer(title: "Занимаюсь саморазвитием", animal: .cat),
-                    Answer(title: "Занимаюсь спортом", animal: .rabbit),
-                    Answer(title: "Гуляю", animal: .turtle)
+                    Answer(title: "Занимаюсь саморазвитием", animal: .reality),
+                    Answer(title: "Занимаюсь спортом", animal: .deliberate),
+                    Answer(title: "Гуляю", animal: .commonPerson)
                 ]
             ),
             Question(
@@ -37,9 +37,9 @@ struct Question {
                 responseType: .ranged,
                 answers: [
                     Answer(title: "Ненавижу", animal: .blackHole),
-                    Answer(title: "Нервничаю", animal: .rabbit),
-                    Answer(title: "Не замечаю", animal: .turtle),
-                    Answer(title: "Обожаю", animal: .cat)
+                    Answer(title: "Нервничаю", animal: .deliberate),
+                    Answer(title: "Не замечаю", animal: .commonPerson),
+                    Answer(title: "Обожаю", animal: .reality)
                 ]
             ),
         ]
@@ -58,21 +58,21 @@ struct Answer {
 }
 
 enum Animal: Character {
-    case blackHole = "⬛️"
-    case cat = "🐱"
-    case rabbit = "🐰"
-    case turtle = "🐢"
+    case blackHole = "🧟‍♂️"
+    case commonPerson = "🙎"
+    case deliberate = "🥷"
+    case reality = "🐢"
 
     var definition: String {
         switch self {
         case .blackHole:
-            return "Вы проживаете жизнь зря вы - NPC"
-        case .cat:
-            return "Вы себе на уме. Любите гулять сами по себе. Вы цените одиночество."
-        case .rabbit:
-            return "Вам нравится все мягкое. Вы здоровы и полны энергии."
-        case .turtle:
-            return "Ваша сила - в мудрости. Медленный и вдумчивый выигрывает на больших дистанциях."
+            return "Вы тратите своё время и направляете свои силы не в то русло"
+        case .commonPerson:
+            return "Вы проживаете свою жизнь как обычный человек"
+        case .deliberate:
+            return "Вы понимаете что происходит в вашей жизни и управляете свое реальностью"
+        case .reality:
+            return "Вы сама реальность"
         }
     }
 }
