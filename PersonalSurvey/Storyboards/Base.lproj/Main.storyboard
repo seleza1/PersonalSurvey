@@ -91,13 +91,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Aep-5i-u2j">
                                 <rect key="frame" x="16" y="316.66666666666669" width="382" height="102.66666666666669"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - черная дыра" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Pa-O5-yls">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - 🧟‍♂️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Pa-O5-yls">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - поглащаете " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfF-SR-eZk">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfF-SR-eZk">
                                         <rect key="frame" x="0.0" y="68" width="382" height="34.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                         <nil key="textColor"/>
@@ -105,11 +105,21 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTd-DG-Z8R">
+                                <rect key="frame" x="96.000000000000014" y="535" width="222.33333333333337" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Получить рекомендации"/>
+                                <connections>
+                                    <segue destination="LV9-fg-7Bg" kind="show" id="ilp-je-vxs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UFh-V2-YOG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="gTd-DG-Z8R" firstAttribute="centerY" secondItem="Ium-GH-Gwx" secondAttribute="centerY" multiplier="1.5" id="2dk-U5-Qsd"/>
                             <constraint firstItem="UFh-V2-YOG" firstAttribute="trailing" secondItem="Aep-5i-u2j" secondAttribute="trailing" constant="16" id="3c7-Ri-NKj"/>
+                            <constraint firstItem="gTd-DG-Z8R" firstAttribute="centerX" secondItem="Ium-GH-Gwx" secondAttribute="centerX" id="c82-zQ-gAX"/>
                             <constraint firstItem="Aep-5i-u2j" firstAttribute="leading" secondItem="UFh-V2-YOG" secondAttribute="leading" constant="16" id="vSg-Ug-x4n"/>
                             <constraint firstItem="Aep-5i-u2j" firstAttribute="centerY" secondItem="Ium-GH-Gwx" secondAttribute="centerY" id="y0p-nd-pKN"/>
                         </constraints>
@@ -129,6 +139,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x8j-9m-zpU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2364" y="2"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ocg-0a-lHS">
+            <objects>
+                <viewController id="LV9-fg-7Bg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uZd-NO-eRL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.Если ваш смайлик -🧟‍♂️, то вам нужно обратиться по телеофону 89991699289, вам срочно нужна помощь профессионала" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QZ-mz-hUj">
+                                <rect key="frame" x="16" y="112" width="382" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.Если ваш смайлик -🙎, то вам нужно как минимум перестать сидеть в социальных сетях" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yO-GG-cHc">
+                                <rect key="frame" x="16" y="189" width="382" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.Если ваш смайлик -🤴, то вам не нужны рекомендации" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjx-DZ-RCv">
+                                <rect key="frame" x="16" y="245.66666666666666" width="382" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="j8I-FI-OmO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="j8I-FI-OmO" firstAttribute="trailing" secondItem="Xjx-DZ-RCv" secondAttribute="trailing" constant="16" id="0wm-2z-rHx"/>
+                            <constraint firstItem="j8I-FI-OmO" firstAttribute="trailing" secondItem="4yO-GG-cHc" secondAttribute="trailing" constant="16" id="1Fd-6S-84d"/>
+                            <constraint firstItem="Xjx-DZ-RCv" firstAttribute="top" secondItem="4yO-GG-cHc" secondAttribute="bottom" constant="16" id="3dd-cb-L2C"/>
+                            <constraint firstItem="j8I-FI-OmO" firstAttribute="trailing" secondItem="0QZ-mz-hUj" secondAttribute="trailing" constant="16" id="JRQ-lu-FiS"/>
+                            <constraint firstItem="0QZ-mz-hUj" firstAttribute="top" secondItem="j8I-FI-OmO" secondAttribute="top" constant="16" id="P30-wK-pca"/>
+                            <constraint firstItem="4yO-GG-cHc" firstAttribute="top" secondItem="0QZ-mz-hUj" secondAttribute="bottom" constant="16" id="asJ-8U-ctC"/>
+                            <constraint firstItem="4yO-GG-cHc" firstAttribute="leading" secondItem="j8I-FI-OmO" secondAttribute="leading" constant="16" id="ksq-Wi-0GT"/>
+                            <constraint firstItem="Xjx-DZ-RCv" firstAttribute="leading" secondItem="j8I-FI-OmO" secondAttribute="leading" constant="16" id="sso-BG-50y"/>
+                            <constraint firstItem="0QZ-mz-hUj" firstAttribute="leading" secondItem="j8I-FI-OmO" secondAttribute="leading" constant="16" id="zby-ov-TnN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RrO-Gz-yDm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tIz-EP-70e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3153.6231884057975" y="12.228260869565219"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IJt-pF-Y6d">
