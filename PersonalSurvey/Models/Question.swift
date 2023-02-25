@@ -19,12 +19,12 @@ struct Question {
                     Answer(title: "Беру телефон в руки", animal: .zombie),
                     Answer(title: "Иду умываться", animal: .commonPerson),
                     Answer(title: "Делаю записи в дневник", animal: .deliberate),
-                    Answer(title: "Делаю зарядку, Сажусь за учёбу", animal: .reality)
+                    Answer(title: "Делаю зарядку, сажусь за учёбу", animal: .reality)
                 ]
             ),
 
             Question(
-                title: "Любите ли вы смотреть что-то когда кушаете?",
+                title: "Вы что-то смотрите когда кушаете?",
                 responseType: .two,
                 answers: [
                     Answer(title: "Да, смотрю ютубе, сижу в соц.сетях", animal: .zombie),
@@ -32,10 +32,10 @@ struct Question {
                 ]
             ),
             Question(
-                title: "Как вы проводите своё свободное время?",
+                title: "Как вы проводите своё свободное время чаще всего?",
                 responseType: .multiple,
                 answers: [
-                    Answer(title: "Смотрю тик-ток, сижу в соц сетях", animal: .zombie),
+                    Answer(title: "Смотрю тик-ток, сижу в соц.сетях", animal: .zombie),
                     Answer(title: "Занимаюсь саморазвитием", animal: .reality),
                     Answer(title: "Занимаюсь спортом", animal: .deliberate),
                     Answer(title: "Гуляю", animal: .commonPerson)
@@ -82,7 +82,7 @@ enum Animal: Character {
         case .deliberate:
             return "Вы на правильном пути, продолжайте в том же духе."
         case .reality:
-            return "Вы понимаете что происходит в вашей жизни и управляете свое реальностью."
+            return "Вы понимаете что происходит в вашей жизни и управляете своей реальностью."
         }
     }
 }
