@@ -15,6 +15,9 @@ class QuestionsViewController: UIViewController {
     @IBOutlet var singleStackView: UIStackView!
     @IBOutlet var singleButtons: [UIButton]!
 
+    @IBOutlet var singleStackViewTwo: UIStackView!
+    @IBOutlet var singleButtonTwo: [UIButton]!
+
     @IBOutlet var multipleStackView: UIStackView!
     @IBOutlet var multipleLabels: [UILabel]!
     @IBOutlet var multipleSwitches: [UISwitch]!
@@ -55,6 +58,14 @@ class QuestionsViewController: UIViewController {
         nextQuestion()
     }
 
+    @IBAction func singleButtonPressedTwo(_ sender: UIButton) {
+        guard let index = singleButtonTwo.firstIndex(of: sender) else { return }
+        let answer = currentAnswers[index]
+        answersChosen.append(answer)
+        nextQuestion()
+    }
+
+
     @IBAction func multipleButtonAnswerPressed() {
         for (multipleSwitches, answer) in zip(multipleSwitches, currentAnswers) {
             if multipleSwitches.isOn {
@@ -73,7 +84,7 @@ class QuestionsViewController: UIViewController {
 
 extension QuestionsViewController {
     private func updateUi() {
-        for stackView in [singleStackView, multipleStackView, rangedStackView] {
+        for stackView in [singleStackView, multipleStackView, rangedStackView, singleStackViewTwo] {
             stackView?.isHidden = true
         }
 
@@ -94,7 +105,7 @@ extension QuestionsViewController {
         case .single: showSingleStackView(with: currentAnswers)
         case .multiple: showMultipleStackView(with: currentAnswers)
         case .ranged: showRangedStackView(with: currentAnswers)
-        case .two:
+        case .two: showSingleStackViewTwo(with: currentAnswers)
         }
     }
 
@@ -120,6 +131,15 @@ extension QuestionsViewController {
         rangedLabels.first?.text = answers.first?.title
         rangedLabels.last?.text = answers.last?.title
     }
+
+    private func showSingleStackViewTwo(with answers: [Answer]) {
+        singleStackViewTwo.isHidden.toggle()
+
+        for (button, answer) in zip(singleButtonTwo, answers) {
+            button.setTitle(answer.title, for: .normal)
+        }
+    }
+
 
     private func nextQuestion() {
         questionIndex += 1

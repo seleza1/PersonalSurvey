@@ -362,6 +362,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="Mec-gK-TgA">
+                                <rect key="frame" x="16" y="304.66666666666669" width="382" height="126.66666666666669"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLl-aq-lQ2">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonPressedTwo:" destination="pTq-lw-meT" eventType="touchUpInside" id="UnQ-kU-nbF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9N-ht-ezA">
+                                        <rect key="frame" x="0.0" y="92.333333333333314" width="382" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonPressedTwo:" destination="pTq-lw-meT" eventType="touchUpInside" id="Ren-c7-haK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HQs-ky-zMU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -373,22 +394,18 @@
                             <constraint firstItem="HQs-ky-zMU" firstAttribute="trailing" secondItem="GLA-g7-skr" secondAttribute="trailing" constant="16" id="OLd-ma-LkE"/>
                             <constraint firstItem="jBp-r4-nYc" firstAttribute="leading" secondItem="HQs-ky-zMU" secondAttribute="leading" constant="16" id="Rid-gR-Jwe"/>
                             <constraint firstItem="HQs-ky-zMU" firstAttribute="trailing" secondItem="a7K-2P-CfD" secondAttribute="trailing" constant="16" id="YGq-Br-tJw"/>
+                            <constraint firstItem="Mec-gK-TgA" firstAttribute="leading" secondItem="HQs-ky-zMU" secondAttribute="leading" constant="16" id="dyK-Tj-Oek"/>
                             <constraint firstItem="GLA-g7-skr" firstAttribute="centerY" secondItem="JOk-Ze-5vC" secondAttribute="centerY" id="eUb-NV-K7P"/>
                             <constraint firstItem="HQs-ky-zMU" firstAttribute="trailing" secondItem="jBp-r4-nYc" secondAttribute="trailing" constant="16" id="i88-Td-eUY"/>
+                            <constraint firstItem="HQs-ky-zMU" firstAttribute="trailing" secondItem="Mec-gK-TgA" secondAttribute="trailing" constant="16" id="jro-Rw-eXb"/>
                             <constraint firstItem="AN2-K9-oUS" firstAttribute="top" secondItem="HQs-ky-zMU" secondAttribute="top" id="kNH-WV-4hI"/>
                             <constraint firstItem="a7K-2P-CfD" firstAttribute="centerY" secondItem="JOk-Ze-5vC" secondAttribute="centerY" id="rAu-jt-Eky"/>
                             <constraint firstItem="a7K-2P-CfD" firstAttribute="leading" secondItem="HQs-ky-zMU" secondAttribute="leading" constant="16" id="tnb-h7-3oD"/>
                             <constraint firstItem="HQs-ky-zMU" firstAttribute="trailing" secondItem="6J0-7q-lhj" secondAttribute="trailing" constant="16" id="ujD-oZ-19d"/>
                             <constraint firstItem="AN2-K9-oUS" firstAttribute="trailing" secondItem="HQs-ky-zMU" secondAttribute="trailing" id="uoB-6e-3Qv"/>
                             <constraint firstItem="jBp-r4-nYc" firstAttribute="centerY" secondItem="JOk-Ze-5vC" secondAttribute="centerY" id="wr2-lU-YB9"/>
+                            <constraint firstItem="Mec-gK-TgA" firstAttribute="centerY" secondItem="JOk-Ze-5vC" secondAttribute="centerY" id="zGd-ZC-Kke"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="GLA-g7-skr"/>
-                                <exclude reference="jBp-r4-nYc"/>
-                                <exclude reference="a7K-2P-CfD"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="MVw-Z8-t0u"/>
                     <connections>
@@ -398,6 +415,7 @@
                         <outlet property="rangedSlider" destination="JzQ-CS-Hvw" id="94q-2v-pEH"/>
                         <outlet property="rangedStackView" destination="a7K-2P-CfD" id="DVO-Tp-YmB"/>
                         <outlet property="singleStackView" destination="GLA-g7-skr" id="sEB-bV-BT2"/>
+                        <outlet property="singleStackViewTwo" destination="Mec-gK-TgA" id="exN-Wd-Cja"/>
                         <outletCollection property="singleButtons" destination="UxK-7l-2K4" collectionClass="NSMutableArray" id="Kn8-9u-LoT"/>
                         <outletCollection property="singleButtons" destination="XYG-uS-EJa" collectionClass="NSMutableArray" id="R2z-nT-bwP"/>
                         <outletCollection property="singleButtons" destination="Rh3-KV-2FC" collectionClass="NSMutableArray" id="3h9-Im-Dbu"/>
@@ -412,6 +430,8 @@
                         <outletCollection property="multipleSwitches" destination="qaf-hI-Xus" collectionClass="NSMutableArray" id="vkP-Na-F9g"/>
                         <outletCollection property="rangedLabels" destination="LZT-nJ-bI4" collectionClass="NSMutableArray" id="iTN-Pf-ReK"/>
                         <outletCollection property="rangedLabels" destination="qIV-eY-gF3" collectionClass="NSMutableArray" id="fvA-UT-75P"/>
+                        <outletCollection property="singleButtonTwo" destination="lLl-aq-lQ2" collectionClass="NSMutableArray" id="NUY-L4-bzO"/>
+                        <outletCollection property="singleButtonTwo" destination="s9N-ht-ezA" collectionClass="NSMutableArray" id="KrQ-8r-cf0"/>
                         <segue destination="fdU-8b-jQL" kind="show" identifier="showResult" id="ahV-KK-acC"/>
                     </connections>
                 </viewController>

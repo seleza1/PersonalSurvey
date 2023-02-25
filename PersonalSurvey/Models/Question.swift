@@ -22,6 +22,15 @@ struct Question {
                     Answer(title: "Делаю зарядку, Сажусь за учёбу", animal: .reality)
                 ]
             ),
+
+            Question(
+                title: "Любите ли вы смотреть что-то когда кушаете?",
+                responseType: .two,
+                answers: [
+                    Answer(title: "Да, смотрю ютубе, сижу в соц сетях", animal: .zombie),
+                    Answer(title: "Нет, в моих руках во время еды только ложка", animal: .deliberate)
+            ]
+            ),
             Question(
                 title: "Как вы проводите своё свободное время?",
                 responseType: .multiple,
@@ -42,13 +51,7 @@ struct Question {
                     Answer(title: "Обожаю", animal: .reality)
                 ]
             ),
-            Question(
-                title: "Любите ли вы смотреть что-то когда кушаете?",
-                responseType: .two,
-                answers: [
-                    Answer(title: "Да, смотрю ютубе, сижу в соц сетях", animal: .zombie),
-                    Answer(title: "Нет, в моих руках во время еды только ложка", animal: .deliberate)
-            ])
+
         ]
     }
 }
