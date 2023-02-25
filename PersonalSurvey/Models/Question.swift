@@ -42,6 +42,13 @@ struct Question {
                     Answer(title: "Обожаю", animal: .reality)
                 ]
             ),
+            Question(
+                title: "Любите ли вы смотреть что-то когда кушаете?",
+                responseType: .two,
+                answers: [
+                    Answer(title: "Да, смотрю ютубе, сижу в соц сетях", animal: .zombie),
+                    Answer(title: "Нет, в моих руках во время еды только ложка", animal: .deliberate)
+            ])
         ]
     }
 }
@@ -50,6 +57,7 @@ enum ResponseType {
     case single
     case multiple
     case ranged
+    case two
 }
 
 struct Answer {

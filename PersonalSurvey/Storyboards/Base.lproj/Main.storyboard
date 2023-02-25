@@ -148,20 +148,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.Если ваш смайлик -🧟‍♂️, то вам нужно обратиться по телеофону 89991699289, вам срочно нужна помощь профессионала" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QZ-mz-hUj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.Если ваш смайлик -🧟‍♂️, то вам нужно обратиться к профессионалу, а то жизнь так и уйдет в никуда." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QZ-mz-hUj">
                                 <rect key="frame" x="16" y="112" width="382" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.Если ваш смайлик -🙎, то вам нужно как минимум перестать сидеть в социальных сетях" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yO-GG-cHc">
-                                <rect key="frame" x="16" y="189" width="382" height="40.666666666666657"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.Если ваш смайлик -🙎, то вам нужно как минимум перестать сидеть в социальных сетях." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yO-GG-cHc">
+                                <rect key="frame" x="16" y="189" width="382" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.Если ваш смайлик -🤴, то продолжайте в том же духе" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjx-DZ-RCv">
-                                <rect key="frame" x="16" y="245.66666666666666" width="382" height="40.666666666666657"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.Если ваш смайлик -🤴, то продолжайте в том же духе." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjx-DZ-RCv">
+                                <rect key="frame" x="16" y="266" width="382" height="40.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -185,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tIz-EP-70e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3153.6231884057975" y="12.228260869565219"/>
+            <point key="canvasLocation" x="3151" y="2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IJt-pF-Y6d">
@@ -382,6 +382,13 @@
                             <constraint firstItem="AN2-K9-oUS" firstAttribute="trailing" secondItem="HQs-ky-zMU" secondAttribute="trailing" id="uoB-6e-3Qv"/>
                             <constraint firstItem="jBp-r4-nYc" firstAttribute="centerY" secondItem="JOk-Ze-5vC" secondAttribute="centerY" id="wr2-lU-YB9"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="GLA-g7-skr"/>
+                                <exclude reference="jBp-r4-nYc"/>
+                                <exclude reference="a7K-2P-CfD"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="MVw-Z8-t0u"/>
                     <connections>

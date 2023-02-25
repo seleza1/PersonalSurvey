@@ -94,7 +94,7 @@ extension QuestionsViewController {
         case .single: showSingleStackView(with: currentAnswers)
         case .multiple: showMultipleStackView(with: currentAnswers)
         case .ranged: showRangedStackView(with: currentAnswers)
-
+        case .two:
         }
     }
 
