@@ -46,13 +46,11 @@ struct Question {
                 responseType: .ranged,
                 answers: [
                     Answer(title: "Ненавижу", animal: .zombie),
-                    Answer(title: "Нервничаю", animal: .deliberate),
-                    Answer(title: "Не замечаю", animal: .commonPerson),
+                    Answer(title: "Нервничаю", animal: .commonPerson),
+                    Answer(title: "Не замечаю", animal: .deliberate),
                     Answer(title: "Обожаю", animal: .reality)
                 ]
             ),
-
-
         ]
     }
 }

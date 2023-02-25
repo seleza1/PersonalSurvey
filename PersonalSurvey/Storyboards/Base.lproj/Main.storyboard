@@ -417,6 +417,14 @@
                             <constraint firstItem="jBp-r4-nYc" firstAttribute="centerY" secondItem="JOk-Ze-5vC" secondAttribute="centerY" id="wr2-lU-YB9"/>
                             <constraint firstItem="Mec-gK-TgA" firstAttribute="centerY" secondItem="JOk-Ze-5vC" secondAttribute="centerY" id="zGd-ZC-Kke"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="GLA-g7-skr"/>
+                                <exclude reference="jBp-r4-nYc"/>
+                                <exclude reference="a7K-2P-CfD"/>
+                                <exclude reference="Mec-gK-TgA"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="MVw-Z8-t0u"/>
                     <connections>
