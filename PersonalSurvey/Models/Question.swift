@@ -51,6 +51,8 @@ struct Question {
                     Answer(title: "Обожаю", animal: .reality)
                 ]
             ),
+
+
         ]
     }
 }
