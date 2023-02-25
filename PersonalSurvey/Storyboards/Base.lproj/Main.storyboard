@@ -362,8 +362,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="Mec-gK-TgA">
-                                <rect key="frame" x="16" y="304.66666666666669" width="382" height="126.66666666666669"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Mec-gK-TgA">
+                                <rect key="frame" x="16" y="325.66666666666669" width="382" height="84.666666666666686"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLl-aq-lQ2">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="34.333333333333336"/>
@@ -374,7 +374,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9N-ht-ezA">
-                                        <rect key="frame" x="0.0" y="92.333333333333314" width="382" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="50.333333333333314" width="382" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>

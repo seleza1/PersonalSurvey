@@ -27,9 +27,9 @@ struct Question {
                 title: "Любите ли вы смотреть что-то когда кушаете?",
                 responseType: .two,
                 answers: [
-                    Answer(title: "Да, смотрю ютубе, сижу в соц сетях", animal: .zombie),
-                    Answer(title: "Нет, в моих руках во время еды только ложка", animal: .deliberate)
-            ]
+                    Answer(title: "Да, смотрю ютубе, сижу в соц.сетях", animal: .zombie),
+                    Answer(title: "Нет, в моих руках во время еды только столовый прибор", animal: .deliberate)
+                ]
             ),
             Question(
                 title: "Как вы проводите своё свободное время?",
@@ -51,7 +51,6 @@ struct Question {
                     Answer(title: "Обожаю", animal: .reality)
                 ]
             ),
-
         ]
     }
 }
