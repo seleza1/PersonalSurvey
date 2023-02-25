@@ -59,15 +59,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Возможно некоторые варианты ответа не подойдут вам, но общая картина должна быть ясна." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mW2-Lq-YNu">
+                                <rect key="frame" x="120" y="84" width="174" height="32.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mW2-Lq-YNu" secondAttribute="trailing" constant="120" id="3aI-e5-ZGd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E3w-aF-kYv" secondAttribute="bottom" constant="20" id="BTk-p5-cDz"/>
                             <constraint firstItem="iIB-fQ-eEI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DT4-mo-wZJ"/>
                             <constraint firstItem="1e0-KF-mhk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Djj-bw-9ax"/>
+                            <constraint firstItem="mW2-Lq-YNu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="FR4-GY-RcO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9kt-Mu-0fs" secondAttribute="bottom" constant="20" id="STN-93-vNu"/>
+                            <constraint firstItem="olT-NF-7oG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1e0-KF-mhk" secondAttribute="trailing" constant="8" symbolic="YES" id="bIe-jU-BkP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E3w-aF-kYv" secondAttribute="trailing" constant="20" id="bmP-Tg-LP6"/>
+                            <constraint firstItem="mW2-Lq-YNu" firstAttribute="top" secondItem="1e0-KF-mhk" secondAttribute="bottom" constant="16" id="cmE-gF-Beb"/>
+                            <constraint firstItem="E3w-aF-kYv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9kt-Mu-0fs" secondAttribute="trailing" constant="8" symbolic="YES" id="e16-3I-TCa"/>
                             <constraint firstItem="iIB-fQ-eEI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e6i-Lq-Q3z"/>
                             <constraint firstItem="olT-NF-7oG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hEJ-Wk-iGJ"/>
                             <constraint firstItem="1e0-KF-mhk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="nEG-sA-cXr"/>
@@ -78,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="4"/>
+            <point key="canvasLocation" x="139.13043478260872" y="3.2608695652173916"/>
         </scene>
         <!--Результат-->
         <scene sceneID="f7O-wB-O6A">
@@ -209,7 +220,7 @@
         <!--Вопрос №-->
         <scene sceneID="D7t-zb-rhS">
             <objects>
-                <viewController id="pTq-lw-meT" customClass="QuestionsViewController" customModule="PersonalQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pTq-lw-meT" customClass="QuestionsViewController" customModule="PersonalSurvey" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JOk-Ze-5vC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
