@@ -13,21 +13,20 @@ struct Question {
     static func getQuestions() -> [Question] {
         [
             Question(
-                title: "Какую пищу вы предпочитаете?",
+                title: "Как вы проводите своё свободное время?",
                 responseType: .single,
                 answers: [
-                    Answer(title: "Стейк", animal: .dog),
+                    Answer(title: "Смотрю тик-ток, сижу в соц сетях", animal: .blackHole),
                     Answer(title: "Рыба", animal: .cat),
                     Answer(title: "Морковь", animal: .rabbit),
                     Answer(title: "Кукуруза", animal: .turtle)
                 ]
             ),
-
             Question(
                 title: "Что вам нравится больше?",
                 responseType: .multiple,
                 answers: [
-                    Answer(title: "Плавать", animal: .dog),
+                    Answer(title: "Сидеть дома", animal: .blackHole),
                     Answer(title: "Спать", animal: .cat),
                     Answer(title: "Обнматься", animal: .rabbit),
                     Answer(title: "Есть", animal: .turtle)
@@ -40,7 +39,7 @@ struct Question {
                     Answer(title: "Ненавижу", animal: .cat),
                     Answer(title: "Нервничаю", animal: .rabbit),
                     Answer(title: "Не замечаю", animal: .turtle),
-                    Answer(title: "Обожаю", animal: .dog)
+                    Answer(title: "Обожаю", animal: .blackHole)
                 ]
             ),
         ]
@@ -59,15 +58,15 @@ struct Answer {
 }
 
 enum Animal: Character {
-    case dog = "🐶"
+    case blackHole = "⬛️"
     case cat = "🐱"
     case rabbit = "🐰"
     case turtle = "🐢"
 
     var definition: String {
         switch self {
-        case .dog:
-            return "Вам нравится быть с друзьями. Вы окружаете себя людьми, которые вам нравятся и всегда готовы помочь."
+        case .blackHole:
+            return "Вы проживаете жизнь зря вы - NPC"
         case .cat:
             return "Вы себе на уме. Любите гулять сами по себе. Вы цените одиночество."
         case .rabbit:
