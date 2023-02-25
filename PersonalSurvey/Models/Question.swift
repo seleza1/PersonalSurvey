@@ -13,33 +13,33 @@ struct Question {
     static func getQuestions() -> [Question] {
         [
             Question(
-                title: "Как вы проводите своё свободное время?",
+                title: "Что вы делаете после того как проснулись ",
                 responseType: .single,
                 answers: [
-                    Answer(title: "Смотрю тик-ток, сижу в соц сетях", animal: .blackHole),
-                    Answer(title: "Рыба", animal: .cat),
-                    Answer(title: "Морковь", animal: .rabbit),
-                    Answer(title: "Кукуруза", animal: .turtle)
+                    Answer(title: "Беру телефон в руки", animal: .blackHole),
+                    Answer(title: "Делаю зарядку", animal: .cat),
+                    Answer(title: "Делаю записи в дневник", animal: .rabbit),
+                    Answer(title: "Сажусь за учёбу", animal: .turtle)
                 ]
             ),
             Question(
-                title: "Что вам нравится больше?",
+                title: "Как вы проводите своё свободное время?",
                 responseType: .multiple,
                 answers: [
-                    Answer(title: "Сидеть дома", animal: .blackHole),
-                    Answer(title: "Спать", animal: .cat),
-                    Answer(title: "Обнматься", animal: .rabbit),
-                    Answer(title: "Есть", animal: .turtle)
+                    Answer(title: "Смотрю тик-ток, сижу в соц сетях", animal: .blackHole),
+                    Answer(title: "Занимаюсь саморазвитием", animal: .cat),
+                    Answer(title: "Занимаюсь спортом", animal: .rabbit),
+                    Answer(title: "Гуляю", animal: .turtle)
                 ]
             ),
             Question(
-                title: "Любите ли вы поездки на машине?",
+                title: "Любите ли вы читать книги?",
                 responseType: .ranged,
                 answers: [
-                    Answer(title: "Ненавижу", animal: .cat),
+                    Answer(title: "Ненавижу", animal: .blackHole),
                     Answer(title: "Нервничаю", animal: .rabbit),
                     Answer(title: "Не замечаю", animal: .turtle),
-                    Answer(title: "Обожаю", animal: .blackHole)
+                    Answer(title: "Обожаю", animal: .cat)
                 ]
             ),
         ]
