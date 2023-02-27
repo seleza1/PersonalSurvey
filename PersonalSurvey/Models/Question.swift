@@ -13,11 +13,11 @@ struct Question {
     static func getQuestions() -> [Question] {
         [
             Question(
-                title: "Что вы делаете после того как проснулись?",
+                title: "Ваша последовательность действия после пробуждения?",
                 responseType: .single,
                 answers: [
                     Answer(title: "Беру телефон в руки", animal: .zombie),
-                    Answer(title: "Иду умываться", animal: .commonPerson),
+                    Answer(title: "Сажусь кушать, иду умываться", animal: .commonPerson),
                     Answer(title: "Делаю записи в дневник", animal: .deliberate),
                     Answer(title: "Делаю зарядку, сажусь за учёбу", animal: .reality)
                 ]
